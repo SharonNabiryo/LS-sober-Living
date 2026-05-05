@@ -45,7 +45,7 @@ export default function HomeFeel() {
               className="col-span-2 w-full h-52 object-cover rounded-2xl shadow-sm"
             />
             <img
-              src="https://picsum.photos/seed/kitchen22/400/300"
+              src="/kitchen.jpg"
               alt="Kitchen"
               className="w-full h-36 object-cover rounded-2xl shadow-sm"
             />
