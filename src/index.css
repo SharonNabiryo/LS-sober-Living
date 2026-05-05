@@ -1,0 +1,133 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ──────────────────────────────────────────────
+   Base styles
+────────────────────────────────────────────── */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply font-body text-navy-900 bg-sand-50 antialiased;
+  }
+
+  h1, h2, h3, h4 {
+    @apply font-display;
+  }
+}
+
+/* ──────────────────────────────────────────────
+   Reusable component classes
+────────────────────────────────────────────── */
+@layer components {
+  /* Section wrapper */
+  .section-container {
+    @apply max-w-6xl mx-auto px-5 sm:px-8 lg:px-10;
+  }
+
+  /* Section heading */
+  .section-heading {
+    @apply font-display text-3xl sm:text-4xl font-semibold text-navy-900 leading-tight;
+  }
+
+  /* Divider accent line */
+  .accent-line {
+    @apply w-12 h-1 bg-sage-500 rounded-full mt-3 mb-6;
+  }
+
+  /* Primary button */
+  .btn-primary {
+    @apply inline-block bg-navy-800 hover:bg-navy-700 text-white font-semibold
+           px-7 py-3.5 rounded-full transition-all duration-200
+           shadow-md hover:shadow-lg hover:-translate-y-0.5 focus:outline-none
+           focus:ring-2 focus:ring-navy-400 focus:ring-offset-2;
+  }
+
+  /* Secondary button */
+  .btn-secondary {
+    @apply inline-block border-2 border-navy-800 text-navy-800 hover:bg-navy-800
+           hover:text-white font-semibold px-7 py-3 rounded-full
+           transition-all duration-200 focus:outline-none
+           focus:ring-2 focus:ring-navy-400 focus:ring-offset-2;
+  }
+
+  /* Card base */
+  .card {
+    @apply bg-white rounded-2xl shadow-sm border border-sand-100
+           p-6 hover:shadow-md transition-shadow duration-200;
+  }
+
+  /* Form input */
+  .form-input {
+    @apply w-full border border-sand-200 rounded-xl px-4 py-3
+           bg-white text-navy-900 placeholder-navy-400
+           focus:outline-none focus:ring-2 focus:ring-sage-400
+           focus:border-sage-400 transition-colors duration-150;
+  }
+
+  /* Form label */
+  .form-label {
+    @apply block text-sm font-semibold text-navy-700 mb-1.5;
+  }
+}
+
+/* ──────────────────────────────────────────────
+   Subtle section background alternating
+────────────────────────────────────────────── */
+.bg-section-alt {
+  background-color: #f7f3ec; /* warm off-white */
+}
+
+/* ──────────────────────────────────────────────
+   Nav link active underline trick
+────────────────────────────────────────────── */
+.nav-link {
+  position: relative;
+}
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #4e844e; /* sage-500 */
+  border-radius: 2px;
+  transition: width 0.2s ease;
+}
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* ──────────────────────────────────────────────
+   Hero texture overlay
+────────────────────────────────────────────── */
+.hero-gradient {
+  background: linear-gradient(
+    135deg,
+    #0b1a3d 0%,
+    #162e6b 45%,
+    #1e3f8a 70%,
+    #305430 100%
+  );
+}
+
+/* ──────────────────────────────────────────────
+   Fade-up animation utility
+────────────────────────────────────────────── */
+.animate-on-load {
+  opacity: 0;
+  animation: fadeUp 0.7s ease forwards;
+}
+.animate-delay-1 { animation-delay: 0.1s; }
+.animate-delay-2 { animation-delay: 0.25s; }
+.animate-delay-3 { animation-delay: 0.4s; }
+.animate-delay-4 { animation-delay: 0.55s; }
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(22px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
