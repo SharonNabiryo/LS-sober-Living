@@ -72,7 +72,7 @@ export default function FAQ() {
   const toggle = (i) => setOpenIndex(prev => (prev === i ? -1 : i))
 
   return (
-    <section id="faq" className="py-20 lg:py-28 bg-section-alt">
+    <section id="faq" className="py-14 lg:py-28 bg-section-alt">
       <div className="section-container max-w-3xl">
 
         {/* Header */}

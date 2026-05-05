@@ -1,3 +1,6 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faPhone, faEnvelope, faLocationDot } from '@fortawesome/free-solid-svg-icons'
+
 const FOOTER_LINKS = [
   { label: 'Home',          href: '#home' },
   { label: 'About',         href: '#about' },
@@ -63,10 +66,10 @@ export default function Footer() {
             <p className="font-semibold text-white text-xs uppercase tracking-widest mb-5">
               Get in Touch
             </p>
-            <div className="flex flex-col gap-2.5 text-sand-400 text-sm mb-6">
-              <span>📞 (XXX) XXX-XXXX</span>
-              <span>✉️ contact@lssoberliving.com</span>
-              <span>📍 Dallas / Fort Worth, TX</span>
+            <div className="flex flex-col gap-3 text-sand-400 text-sm mb-6">
+              <span className="flex items-center gap-2.5"><FontAwesomeIcon icon={faPhone} className="text-sage-500 w-3.5" /> (XXX) XXX-XXXX</span>
+              <span className="flex items-center gap-2.5"><FontAwesomeIcon icon={faEnvelope} className="text-sage-500 w-3.5" /> contact@lssoberliving.com</span>
+              <span className="flex items-center gap-2.5"><FontAwesomeIcon icon={faLocationDot} className="text-sage-500 w-3.5" /> Dallas / Fort Worth, TX</span>
             </div>
             <a href="#apply" className="btn-primary bg-sage-500 hover:bg-sage-400 text-sm py-2.5 px-5">
               Apply Now

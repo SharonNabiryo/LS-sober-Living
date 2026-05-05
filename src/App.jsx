@@ -1,5 +1,6 @@
 import Navbar          from './components/Navbar'
 import Hero            from './components/Hero'
+import TrustStrip      from './components/TrustStrip'
 import About           from './components/About'
 import HomeFeel        from './components/HomeFeel'
 import WhatWeOffer     from './components/WhatWeOffer'
@@ -21,6 +22,7 @@ export default function App() {
       <Navbar />
       <main>
         <Hero />
+        <TrustStrip />
         <About />
         <HomeFeel />
         <WhatWeOffer />

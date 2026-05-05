@@ -33,7 +33,7 @@ export default function ApplicationForm() {
   }
 
   return (
-    <section id="apply" className="py-20 lg:py-28 bg-sand-50">
+    <section id="apply" className="py-14 lg:py-28 bg-sand-50">
       <div className="section-container max-w-3xl">
 
         {/* Header */}
