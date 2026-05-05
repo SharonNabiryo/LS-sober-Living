@@ -38,7 +38,7 @@ export default function HomeFeel() {
           <div className="grid grid-cols-2 gap-3">
             <img src="/Living_room.JPG" alt="Common area" className="col-span-2 w-full h-52 object-cover rounded-2xl shadow-sm" />
             <img src="/kitchen.jpg"     alt="Kitchen"     className="w-full h-36 object-cover rounded-2xl shadow-sm" />
-            <img src="/bedroom.JPG"     alt="Bedroom"     className="w-full h-36 object-cover rounded-2xl shadow-sm" />
+            <img src="/bedroom.jpg"     alt="Bedroom"     className="w-full h-36 object-cover rounded-2xl shadow-sm" />
           </div>
 
         </div>
