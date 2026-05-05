@@ -43,6 +43,11 @@ const OFFERS = [
     title: 'Safe, Monitored Housing',
     desc: 'The home is actively monitored to ensure the safety and sobriety of all residents. Everyone deserves a secure place to rebuild.',
   },
+  {
+    icon: '🚌',
+    title: 'Accessible Location',
+    desc: 'Our home is situated near public transportation routes, grocery stores, pharmacies, and major shopping centers — making it practical for residents to meet daily needs, maintain employment, and stay connected to the community.',
+  },
 ]
 
 export default function WhatWeOffer() {

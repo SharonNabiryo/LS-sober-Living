@@ -7,6 +7,7 @@ import About           from './components/About'
 import WhatWeOffer     from './components/WhatWeOffer'
 import WhoWeServe      from './components/WhoWeServe'
 import Expectations    from './components/Expectations'
+import Testimonials    from './components/Testimonials'
 import Referrals       from './components/Referrals'
 import ApplicationForm from './components/ApplicationForm'
 import FAQ             from './components/FAQ'
@@ -25,6 +26,7 @@ export default function App() {
         <About />
         <WhatWeOffer />
         <WhoWeServe />
+        <Testimonials />
         <Expectations />
         <Referrals />
         <ApplicationForm />
