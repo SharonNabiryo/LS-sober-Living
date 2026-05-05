@@ -1,27 +1,8 @@
-// WhoWeServe.jsx
-// Describes the population best suited for LS Sober Living Homes.
-
 const PROFILES = [
-  {
-    icon: '🧭',
-    title: 'Adults Committed to Sobriety',
-    desc: 'We welcome adults who are serious about maintaining sobriety and are ready to take on the responsibilities of structured communal living.',
-  },
-  {
-    icon: '🔄',
-    title: 'Transitioning from Treatment',
-    desc: 'Individuals leaving inpatient rehab, outpatient programs, or other treatment settings often benefit most from a structured sober living environment during early recovery.',
-  },
-  {
-    icon: '🏗️',
-    title: 'Rebuilding from Instability',
-    desc: 'Those transitioning from unstable or unsafe housing situations — and who are committed to building a more stable, substance-free life.',
-  },
-  {
-    icon: '📑',
-    title: 'Ready to Follow House Rules',
-    desc: 'Residents must be willing to follow all house expectations, participate in the community, and engage in productive daily activity.',
-  },
+  { icon: '🧭', title: 'Adults Committed to Sobriety',        desc: 'Ready to live substance-free and embrace accountability.' },
+  { icon: '🔄', title: 'Transitioning from Treatment',         desc: 'Leaving inpatient rehab, IOP, or other recovery programs.' },
+  { icon: '🏗️', title: 'Rebuilding Stability',                 desc: 'Moving from unstable housing toward a structured, sober life.' },
+  { icon: '📑', title: 'Willing to Follow House Rules',        desc: 'Committed to expectations, participation, and productive daily activity.' },
 ]
 
 export default function WhoWeServe() {
@@ -31,7 +12,7 @@ export default function WhoWeServe() {
 
         <div className="grid lg:grid-cols-2 gap-14 lg:gap-20 items-start">
 
-          {/* Left — text */}
+          {/* Left */}
           <div>
             <p className="text-sage-600 font-semibold text-sm uppercase tracking-widest mb-3">
               Who We Serve
@@ -40,32 +21,22 @@ export default function WhoWeServe() {
               Is This Home Right for You?
             </h2>
             <div className="accent-line" />
-            <p className="text-navy-700 leading-relaxed mb-5">
-              LS Sober Living Homes is for adults who have made the decision to
-              live substance-free and are looking for a structured, supportive
-              environment to support that commitment.
-            </p>
-            <p className="text-navy-700 leading-relaxed">
-              The right fit is someone who is ready to follow the house rules,
-              engage positively with peers, and take consistent steps — however
-              small — toward stability and purpose.
+            <p className="text-navy-700 leading-relaxed mb-8">
+              We serve adults who are serious about sobriety and ready for
+              structured, accountable community living.
             </p>
 
-            {/* Not a fit callout */}
-            <div className="mt-8 p-5 bg-navy-900 rounded-2xl text-white">
-              <p className="font-display font-semibold text-lg mb-2">
-                A Note on Eligibility
-              </p>
-              <p className="text-sand-200 text-sm leading-relaxed">
-                We may not be the right fit for individuals who are currently
-                using substances, who are unwilling to follow house expectations,
-                or who require medical detox or clinical mental health treatment.
-                We are happy to help connect you with appropriate resources if needed.
+            <div className="p-5 bg-navy-900 rounded-2xl text-white">
+              <p className="font-display font-semibold text-base mb-2">A Note on Eligibility</p>
+              <p className="text-sand-300 text-sm leading-relaxed">
+                We may not be the right fit for individuals currently using
+                substances or requiring medical detox or clinical treatment.
+                We're happy to connect you with appropriate resources.
               </p>
             </div>
           </div>
 
-          {/* Right — profile cards */}
+          {/* Right */}
           <div className="flex flex-col gap-4">
             {PROFILES.map(p => (
               <div
@@ -74,10 +45,8 @@ export default function WhoWeServe() {
               >
                 <span className="text-2xl mt-0.5 shrink-0">{p.icon}</span>
                 <div>
-                  <h3 className="font-display font-semibold text-navy-800 mb-1">
-                    {p.title}
-                  </h3>
-                  <p className="text-navy-600 text-sm leading-relaxed">{p.desc}</p>
+                  <h3 className="font-display font-semibold text-navy-800 mb-1">{p.title}</h3>
+                  <p className="text-navy-500 text-sm leading-relaxed">{p.desc}</p>
                 </div>
               </div>
             ))}

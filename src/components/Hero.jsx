@@ -47,8 +47,7 @@ export default function Hero() {
 
           {/* Subheadline */}
           <p className="animate-on-load animate-delay-3 text-lg sm:text-xl text-sand-100/90 font-body font-light leading-relaxed mb-10 max-w-xl mx-auto lg:mx-0">
-            A safe, substance-free home designed for accountability, stability,
-            and recovery-focused living.
+            A safe, substance-free home focused on accountability and stability.
           </p>
 
           {/* CTA Buttons */}
