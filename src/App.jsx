@@ -1,11 +1,13 @@
 import Navbar          from './components/Navbar'
 import Hero            from './components/Hero'
 import About           from './components/About'
+import HomeFeel        from './components/HomeFeel'
 import WhatWeOffer     from './components/WhatWeOffer'
 import WhoWeServe      from './components/WhoWeServe'
 import TrustSection    from './components/TrustSection'
 import CTAStrip        from './components/CTAStrip'
-import Testimonials    from './components/Testimonials'
+import Timeline        from './components/Timeline'
+import ExperienceCards from './components/ExperienceCards'
 import Expectations    from './components/Expectations'
 import Referrals       from './components/Referrals'
 import ApplicationForm from './components/ApplicationForm'
@@ -20,11 +22,13 @@ export default function App() {
       <main>
         <Hero />
         <About />
+        <HomeFeel />
         <WhatWeOffer />
         <WhoWeServe />
         <TrustSection />
         <CTAStrip />
-        <Testimonials />
+        <Timeline />
+        <ExperienceCards />
         <Expectations />
         <Referrals />
         <ApplicationForm />

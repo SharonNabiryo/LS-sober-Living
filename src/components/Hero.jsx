@@ -85,10 +85,30 @@ export default function Hero() {
         <div className="animate-on-load animate-delay-3 hidden lg:block">
           <div className="relative h-[540px] w-full">
             <img
-              src="/Hero.PNG"
+              src="/Hero.JPG"
               alt="Sober living home"
               className="absolute inset-0 w-full h-full object-cover object-center rounded-2xl shadow-2xl"
             />
+            {/* Floating info card */}
+            <div className="absolute bottom-5 left-5 right-5 bg-white/95 backdrop-blur-sm rounded-2xl px-6 py-4 shadow-xl border border-sand-100">
+              <div className="flex justify-around">
+                {[
+                  { icon: "🚫", label: "Substance-Free" },
+                  { icon: "📋", label: "Structured Living" },
+                  { icon: "🏡", label: "Fully Furnished" },
+                ].map((item) => (
+                  <div
+                    key={item.label}
+                    className="flex flex-col items-center gap-1.5"
+                  >
+                    <span className="text-xl">{item.icon}</span>
+                    <span className="text-xs font-semibold text-navy-700">
+                      {item.label}
+                    </span>
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
       </div>
