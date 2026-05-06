@@ -17,10 +17,10 @@ export default function HomeFeel() {
           {/* Text side */}
           <div>
             <p className="text-sage-600 font-semibold text-sm uppercase tracking-widest mb-3">The Home</p>
-            <h2 className="section-heading">A Home Built<br />for Stability</h2>
+            <h2 className="section-heading">Homes Built<br />for Stability</h2>
             <div className="accent-line" />
             <p className="text-navy-600 leading-relaxed mb-8">
-              Our home is designed to feel like a real home — not a facility. Clean, furnished, and calm.
+              Our homes are designed to feel like real homes — not facilities. Clean, furnished, and calm.
             </p>
             <div className="flex flex-col gap-4">
               {FEATURES.map(f => (
@@ -38,7 +38,7 @@ export default function HomeFeel() {
           <div className="grid grid-cols-2 gap-3">
             <img src="/Living_room.JPG" alt="Common area" className="col-span-2 w-full h-52 object-cover rounded-2xl shadow-sm" />
             <img src="/kitchen.jpg"     alt="Kitchen"     className="w-full h-36 object-cover rounded-2xl shadow-sm" />
-            <img src="/bedroom.jpg"     alt="Bedroom"     className="w-full h-36 object-cover rounded-2xl shadow-sm" />
+            <img src="/bedroom-photo.jpg" alt="Bedroom"    className="w-full h-36 object-cover rounded-2xl shadow-sm" />
           </div>
 
         </div>
