@@ -4,7 +4,7 @@ import { faBan, faCalendarDays, faFlask, faCouch, faPeopleGroup, faBriefcase, fa
 const OFFERS = [
   { icon: faBan,          title: 'Substance-Free Environment',  desc: 'Zero tolerance for drugs or alcohol — always.' },
   { icon: faCalendarDays, title: 'Structured Daily Living',      desc: 'Curfews, routines, and clear expectations for every resident.' },
-  { icon: faFlask,        title: 'Random Drug Testing',          desc: 'Regular screening keeps the home safe and accountable.' },
+  { icon: faFlask,        title: 'Random Drug Testing',          desc: 'Regular screening keeps our homes safe and accountable.' },
   { icon: faCouch,        title: 'Fully Furnished Home',         desc: 'Move-in ready housing in the Dallas/Fort Worth area.' },
   { icon: faPeopleGroup,  title: 'Peer Support',                 desc: 'Live alongside others committed to the same recovery goals.' },
   { icon: faBriefcase,    title: 'Recovery-Focused Community',   desc: 'Employment, school, or treatment participation is expected.' },

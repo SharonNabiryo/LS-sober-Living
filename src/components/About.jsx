@@ -18,7 +18,7 @@ export default function About() {
           <div>
             <p className="text-sage-600 font-semibold text-sm uppercase tracking-widest mb-3">About Us</p>
             <h2 className="section-heading mb-0">
-              A Home Built on Structure,<br />Dignity & Community
+              Homes Built on Structure,<br />Dignity & Community
             </h2>
             <div className="accent-line" />
 

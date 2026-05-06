@@ -10,7 +10,7 @@ export default function Hero() {
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full border border-white opacity-5" />
       </div>
 
-      <div className="section-container relative z-10 py-20 lg:py-32 grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+      <div className="max-w-6xl mx-auto px-6 sm:px-8 lg:px-10 w-full relative z-10 py-20 lg:py-32 grid lg:grid-cols-2 gap-6 lg:gap-20 items-center">
 
         {/* Text column */}
         <div className="text-center lg:text-left">
@@ -28,7 +28,7 @@ export default function Hero() {
           </h1>
 
           <p className="animate-on-load animate-delay-3 text-lg sm:text-xl text-sand-100/90 font-body font-light leading-relaxed mb-10 max-w-xl mx-auto lg:mx-0">
-            A safe, substance-free home focused on accountability and stability.
+            Safe, substance-free homes focused on accountability and stability.
           </p>
 
           <div className="animate-on-load animate-delay-4 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
@@ -38,8 +38,8 @@ export default function Hero() {
         </div>
 
         {/* Image column — clean, no card attached */}
-        <div className="animate-on-load animate-delay-3 hidden lg:block">
-          <div className="h-[490px] w-full rounded-2xl overflow-hidden shadow-2xl">
+        <div className="animate-on-load animate-delay-3">
+          <div className="h-[220px] sm:h-80 lg:h-[490px] w-full rounded-2xl overflow-hidden shadow-2xl">
             <img
               src="/Hero.JPG"
               alt="Sober living home"

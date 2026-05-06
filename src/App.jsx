@@ -2,6 +2,7 @@ import Navbar          from './components/Navbar'
 import Hero            from './components/Hero'
 import TrustStrip      from './components/TrustStrip'
 import About           from './components/About'
+import MissionVision   from './components/MissionVision'
 import HomeFeel        from './components/HomeFeel'
 import WhatWeOffer     from './components/WhatWeOffer'
 import WhoWeServe      from './components/WhoWeServe'
@@ -24,6 +25,7 @@ export default function App() {
         <Hero />
         <TrustStrip />
         <About />
+        <MissionVision />
         <HomeFeel />
         <WhatWeOffer />
         <WhoWeServe />
@@ -36,7 +38,6 @@ export default function App() {
         <ApplicationForm />
         <FAQ />
         <Contact />
-        <CTAStrip />
       </main>
       <Footer />
     </>
